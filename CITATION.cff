@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article."
+title: "Heart transplantation in Brazil's public health system, 2000-2025: analysis code"
+type: software
+license: MIT
+authors:
+  - family-names: Hadid
+    given-names: Leonardo
+    affiliation: "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"
+    email: leonardohadid@gmail.com
+  - family-names: Salek
+    given-names: Luísa
+    affiliation: "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"
+  - family-names: Passos
+    given-names: Felipe S.
+    affiliation: "Department of Thoracic Surgery, Hospital MaterDei, Salvador, Brazil"
+  - family-names: Caldonazo
+    given-names: Tulio
+    affiliation: "Department of Cardiothoracic Surgery, Jena University Hospital, Friedrich-Schiller-University Jena, Jena, Germany"
+repository-code: "https://github.com/Hadid55555/heart-transplant-network-brazil"

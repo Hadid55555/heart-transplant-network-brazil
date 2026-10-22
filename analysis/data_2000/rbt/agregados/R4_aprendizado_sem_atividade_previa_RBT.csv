@@ -1,0 +1,7 @@
+amostra,centros,AIH,obitos,termo,OR,lo,hi,p,n_centros_confirmada,n_centros_possivel
+Todos os centros novos,35,2064,271,5 primeiros (vs demais),1.17677097494736,0.6465770261639,2.14172460734405,0.59419858012382,3,1
+Todos os centros novos,35,2064,271,por duplicação do nº do caso,0.861663596248705,0.761416231994014,0.975109436734582,0.0183032284754847,3,1
+Sem os centros com atividade prévia confirmada no RBT,32,2013,266,5 primeiros (vs demais),1.14302461911098,0.619841784596009,2.1078044629491,0.66854878352711,3,1
+Sem os centros com atividade prévia confirmada no RBT,32,2013,266,por duplicação do nº do caso,0.870567855195089,0.766490492248826,0.988777288385392,0.0328642584038726,3,1
+Sem atividade prévia confirmada ou possível no RBT,31,1670,236,5 primeiros (vs demais),1.18446823402308,0.634247925737899,2.21201353678454,0.595253960659493,3,1
+Sem atividade prévia confirmada ou possível no RBT,31,1670,236,por duplicação do nº do caso,0.912655164753953,0.794584254651264,1.0482707716347,0.195992578220924,3,1

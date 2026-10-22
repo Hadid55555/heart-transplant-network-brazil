@@ -1,0 +1,13 @@
+# Record-level data and everything derived from it: never commit
+**/microdados/
+analysis/data_2000_w04/
+analysis/outputs_2000_2025/
+extraction/saida_txc/
+extraction/saida_2000_2007/
+extraction/export/
+extraction/ref/brutos/loc/
+tables_figures/out/
+tables_figures/figures/out/
+__pycache__/
+*.pyc
+.Rhistory

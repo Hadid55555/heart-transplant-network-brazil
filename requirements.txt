@@ -1,0 +1,9 @@
+numpy
+pandas
+pyarrow
+scipy
+statsmodels
+matplotlib
+openpyxl
+pyproj
+dbfread
