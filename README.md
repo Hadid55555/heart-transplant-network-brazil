@@ -38,7 +38,7 @@ Step 2 writes:
 
 - `analysis/outputs_2000_2025/`: results of each analysis block, logs and `Tabelas_TxC_SUS.xlsx`;
 - `tables_figures/out/`: Tables 1–4 (`tables_main_EN.md`) and Supplementary Tables S1–S15 (`Supplementary_Tables_EN.html`);
-- `tables_figures/figures/out/`: Figures 1–3, Supplementary Figures S1–S4 and the central illustration (PDF, TIFF 600 dpi, PNG).
+- `tables_figures/figures/out/`: Figures 1–3 and Supplementary Figures S1–S4 (PDF, TIFF 600 dpi, PNG).
 
 The center bootstrap of the GEE (1000 resamples on 4 cores) takes several hours. Seeds are fixed in the scripts.
 
