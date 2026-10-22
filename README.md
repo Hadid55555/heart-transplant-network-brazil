@@ -38,7 +38,7 @@ Step 2 writes:
 
 - `analysis/outputs_2000_2025/`: results of each analysis block, logs and `Tabelas_TxC_SUS.xlsx`;
 - `tables_figures/out/`: Tables 1–4 (`tables_main_EN.md`) and Supplementary Tables S1–S15 (`Supplementary_Tables_EN.html`);
-- `tables_figures/figures/out/`: Figures 1–3 and Supplementary Figures S1–S4 (PDF, TIFF 600 dpi, PNG).
+- `tables_figures/figures/out/`: Figures 1–4 and Supplementary Figures S1–S3 (PDF, TIFF 600 dpi, PNG).
 
 The center bootstrap of the GEE (1000 resamples on 4 cores) takes several hours. Seeds are fixed in the scripts.
 
@@ -54,11 +54,11 @@ The center bootstrap of the GEE (1000 resamples on 4 cores) takes several hours.
 
 | Article | Scripts |
 |---|---|
-| Selection of admissions (Supplementary Figure S1) | `analysis/scripts/figura_fluxograma.R` |
-| Network by year, concentration, source of growth (Table 2, Figure 1, Supplementary Tables S8–S10, S15) | `bloco1.py`, `bloco7_posthoc.R`, `rede_sensibilidade.py`, `rbt_equipes_2017.py`, `cnes_habilitacao_tabnet.py`, `validacao_externa.py` |
-| Rates by region of residence, distance, proximity (Table 3, Figure 2, Supplementary Tables S5 and S7, Supplementary Figure S4) | `bloco2_geografia.R`, checked by `bloco2_conferencia.py`; `bloco5_sintese.R` |
-| Volume and in-hospital death (Table 4, Figure 3, Supplementary Tables S2, S3 and S10–S12, Supplementary Figure S2) | `comum.R`, `bloco3_volume.R`, `figura3_e_loco.R`, `loco_lrt.R`, `volume_posthoc.R`, `posthoc_dentro.R`, `posthoc_dentro_2.R`, `bloco6_suplemento.R`; checked by `bloco3e4_conferencia.py` |
-| First cases of new centers (Supplementary Table S4, Supplementary Figure S3) | `bloco4_aprendizado.R`, `volume_posthoc.R` |
+| Selection of admissions (Figure 1) | `analysis/scripts/figura_fluxograma.R`; `tables_figures/figures/make_flowchart.py` |
+| Network by year, concentration, source of growth (Table 2, Figure 2, Supplementary Tables S8–S10, S15) | `bloco1.py`, `bloco7_posthoc.R`, `rede_sensibilidade.py`, `rbt_equipes_2017.py`, `cnes_habilitacao_tabnet.py`, `validacao_externa.py` |
+| Rates by region of residence, distance, proximity (Table 3, Figure 3, Supplementary Tables S5 and S7, Supplementary Figure S3) | `bloco2_geografia.R`, checked by `bloco2_conferencia.py`; `bloco5_sintese.R` |
+| Volume and in-hospital death (Table 4, Figure 4, Supplementary Tables S2, S3 and S10–S12, Supplementary Figure S1) | `comum.R`, `bloco3_volume.R`, `figura3_e_loco.R`, `loco_lrt.R`, `volume_posthoc.R`, `posthoc_dentro.R`, `posthoc_dentro_2.R`, `bloco6_suplemento.R`; checked by `bloco3e4_conferencia.py` |
+| First cases of new centers (Supplementary Table S4, Supplementary Figure S2) | `bloco4_aprendizado.R`, `volume_posthoc.R` |
 
 Analysis parameters are set in `analysis/scripts/param.R`. A center is "new" when its first transplant in the data is in or after 2004 (`TXC_ENT=2004`; initial observation window 2000–2003). `analysis/prepare_window.py` applies this definition to the analysis files.
 
