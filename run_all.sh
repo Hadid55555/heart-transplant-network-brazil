@@ -23,5 +23,5 @@ bash scripts/rodar_analise.sh                                      # blocks 1-7 
 cd "$ROOT/tables_figures"
 python3 -I tabelas_en.py "$ROOT/analysis/$O/Tabelas_TxC_SUS.xlsx" out
 cd figures
-for s in make_figures.py make_supp_figures.py; do python3 -I $s "$ROOT/analysis/$O" out; done
+for s in make_flowchart.py make_figures.py make_supp_figures.py; do python3 -I $s "$ROOT/analysis/$O" out; done
 echo "Done: analysis/$O, tables_figures/out, tables_figures/figures/out"

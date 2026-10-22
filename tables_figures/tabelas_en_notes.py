@@ -31,7 +31,7 @@ MAIN = [('T1',
   'transplants in the year; mean of the years of the period. It is a geographic proxy and does not measure access, indication, listing or capacity. '
   'Row 2000–2025: whole period (proximity not applicable). Use as recorded in the SIH, which captures part of the transplants in the country '
   '(Supplementary Table S1). Fifteen admissions without municipality of residence (2005–2006) are excluded from this table. Periods shown: '
-  '2000–2003, 2008–2011, 2023–2025 and the whole period; all periods are shown in Figure 2.'),
+  '2000–2003, 2008–2011, 2023–2025 and the whole period; all periods are shown in Figure 3.'),
  ('T4',
   4,
   'Annual center volume and in-hospital death: multilevel logistic model (main estimate) and GEE (supporting population-average estimate)',
@@ -43,7 +43,7 @@ MAIN = [('T1',
   'resamples). The two models estimate different quantities; divergence between them is not a robustness test. Volume categories (V, including the '
   'index case) in a separate model, which does not separate between- and within-center variation. ‡ Contrast in which "between" exceeds the '
   'second-highest mean center volume (25.9): from 25.9 to 41.7 the between-center curve rests on a single center; the estimate is an extrapolation '
-  'from that center and should not be read in isolation (see the full curve in Figure 3); in these rows the GEE bootstrap CI is unstable. The global '
+  'from that center and should not be read in isolation (see the full curve in Figure 4); in these rows the GEE bootstrap CI is unstable. The global '
   'evidence for "between" is the 2-df LRT. ICC on the latent scale. Observational associations; volume is an operational marker of the center, not a '
   'measure of quality.')]
 
@@ -188,7 +188,7 @@ SUPP = [{'num': 'S1',
            ['6.1 Methods of study population selection',
             'Procedure performed: codes 46800018 and 47800011 (SIH table, 2000–2007) and 05.05.02.004-1 (unified SUS table, from 2008), with '
             'official correspondence; exclusion of procedure only requested (374) and admission outside 2000–2025 (161)',
-            'Methods (Data source; Study population); Supplementary Figure S1; Supplementary Methods'],
+            'Methods (Data source; Study population); Figure 1; Supplementary Methods'],
            ['6.2 Validation of codes or algorithms',
             'No patient-level validation. Counts compared with the RBT by year (2000–2025) and by state (2020, 2023, 2024); 2008–2025 counts by '
             'billing month reproduce the official online tabulation (TabNet) exactly; no detectable discontinuity in mortality at the 2008 table '
@@ -208,7 +208,7 @@ SUPP = [{'num': 'S1',
             'Full access to the public RD files of the 27 states, billing months January 2000 to June 2026 (8580 of 8586 files read; 6 missing from '
             'states without a center); public mirror converted 1:1 from the official files, checksum verified per file; extraction on 13–14 October '
             '2026',
-            'Methods (Data source); Supplementary Figure S1'],
+            'Methods (Data source); Figure 1'],
            ['12.2 Data cleaning methods',
             'Selection by procedure code; restriction by admission date; one row per admission number (no duplicates); initial admission records '
             'only (no continuation records; not one admission per person); hospital identifier harmonized (tax number→CNES); 15 admissions without '
@@ -219,9 +219,8 @@ SUPP = [{'num': 'S1',
             'residence); facility crosswalk tax number→CNES by 3 explicit rules',
             'Methods; Supplementary Methods; Supplementary Methods'],
            ['13.1 Selection flow diagram',
-            '8580 files → 6356 records with transplant performed or requested → 374 requested only → 5982 → 161 outside 2000–2025 → 5821 admissions; '
-            'analytical subsets',
-            'Supplementary Figure S1'],
+            '8580 files → 6356 records with transplant performed or requested → 374 requested only → 5982 → 161 outside 2000–2025 → 5821 admissions',
+            'Figure 1'],
            ['19.1 Limitations of routinely collected data',
             'Partial completeness relative to the RBT; in-hospital outcome only; no severity, mechanical support, urgency, waiting time or donor '
             'data; coding changes in 2008 (procedure table, admission type); tax-number linkage before 2004; poor diagnosis and cause-of-death '

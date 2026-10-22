@@ -1,4 +1,4 @@
-"""Figures 1-3 in English, styled after the figures of major cardiology and general medical journals.
+"""Figures 2-4 in English, styled after the figures of major cardiology and general medical journals.
 
 Reads only aggregate output tables (no microdata). Writes TIFF (600 dpi, LZW), PDF (vector) and PNG (300 dpi).
 Usage: python3 -I make_figures.py <outputs_2000_2025_dir> <out_dir>
@@ -51,7 +51,7 @@ def save(fig, name):
     plt.close(fig)
 
 
-# ---------------- Figure 1: network by year ----------------
+# ---------------- Figure 2: network by year ----------------
 rows = read_sheet(SRC / 'bloco1/Bloco1_tabelas.xlsx', 'Tabela2_rede')
 h = rows[0]; d = [dict(zip(h, r)) for r in rows[1:] if r and isinstance(r[0], int)]
 yr = [r['Ano'] for r in d]
@@ -89,9 +89,9 @@ ax.set_xlabel('Year of admission'); ax.set_xticks(range(2000, 2026, 5)); ax.set_
 for a in axs:
     a.axvspan(2019.5, 2021.5, color=BAND, lw=0, zorder=0)
 axs[0].text(2020.5, 39, 'COVID-19', ha='center', va='top', fontsize=6.3, color=MUTED)
-save(fig, 'Figure1')
+save(fig, 'Figure2')
 
-# ---------------- Figure 2: rates (small multiples) and distance (heat map) by region of residence ----------------
+# ---------------- Figure 3: rates (small multiples) and distance (heat map) by region of residence ----------------
 PER = ['2000-2003', '2004-2007', '2008-2011', '2012-2015', '2016-2019', '2020-2022', '2023-2025']
 PLAB = ['2000–03', '', '2008–11', '', '2016–19', '', '2023–25']
 PFULL = [p.replace('-', '–') for p in PER]
@@ -148,9 +148,9 @@ ax.set_title(r'$\bf{B}$   Median distance from home to transplant hospital, km',
 cb = fig.colorbar(im, ax=ax, fraction=0.025, pad=0.015)
 cb.set_ticks([1, 10, 100, 1000]); cb.set_ticklabels(['≤1', '10', '100', '1000']); cb.outline.set_visible(False)
 cb.ax.tick_params(labelsize=6.3, length=0); cb.ax.minorticks_off()
-save(fig, 'Figure2')
+save(fig, 'Figure3')
 
-# ---------------- Figure 3: volume and in-hospital death ----------------
+# ---------------- Figure 4: volume and in-hospital death ----------------
 # A: between-center association as OR vs the median center (P50), with 95% CI, log scale; B: within-center estimates (forest)
 REV = SRC / 'sensibilidade'
 cur = [dict(r) for r in csv.DictReader(open(REV / 'curva_entre_OR_vs_P50.csv'))]
@@ -206,5 +206,5 @@ axF.xaxis.set_minor_locator(NullLocator())
 axF.set_xlabel('OR per 10 transplants/year\nabove the center mean')
 axL.set_title(r'$\bf{B}$   Within centers', loc='left', x=0.08, fontsize=8, pad=6)
 axL.text(0.12, -1.25, '* Post hoc (open squares).', fontsize=6.3, color=MUTED, va='top')
-save(fig, 'Figure3')
+save(fig, 'Figure4')
 print('ok', sorted(p.name for p in OUT.iterdir() if p.suffix == '.png'))
