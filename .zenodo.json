@@ -1,0 +1,32 @@
+{
+  "title": "Code and data for: Heart transplantation in Brazil's public health system, 2000–2025: a nationwide analysis of network growth, regional utilization and center volume",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Analysis code and aggregated results for the article. The code downloads the public SIH/SUS hospital discharge files (DATASUS) and reproduces the tables and figures. No record-level data are included; centers are identified only by codes.",
+  "creators": [
+    {
+      "name": "Hadid, Leonardo",
+      "affiliation": "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"
+    },
+    {
+      "name": "Salek, Luísa",
+      "affiliation": "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"
+    },
+    {
+      "name": "Passos, Felipe S.",
+      "affiliation": "Department of Thoracic Surgery, Hospital MaterDei, Salvador, Brazil"
+    },
+    {
+      "name": "Caldonazo, Tulio",
+      "affiliation": "Department of Cardiothoracic Surgery, Jena University Hospital, Friedrich-Schiller-University Jena, Jena, Germany"
+    }
+  ],
+  "keywords": [
+    "heart transplantation",
+    "administrative data",
+    "Brazil",
+    "SIH/SUS",
+    "transplant network"
+  ]
+}
