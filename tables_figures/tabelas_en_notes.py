@@ -83,7 +83,7 @@ SUPP = [{'num': 'S1',
  {'num': 'S4',
   'title': 'Centers first observed ≥2004 (exploratory): in-hospital death by sequential case number',
   'note': 'Multilevel model with a random center intercept; adjusted for age group, sex and year (spline). Primary exposure: one of the first 5 '
-          'cases of the center. Without Center 02 (the largest center of this group): 34 centers, 1598 admissions, 202 deaths. Leave-one-center-out '
+          'cases of the center. Without the largest new center: 34 centers, 1598 admissions, 202 deaths. Leave-one-center-out '
           'of the primary analysis (35 refits): OR 1.04 to 1.36. Exploratory; 271 deaths in 35 centers. The contrast of cases 6–10 vs >20 is '
           'exploratory and should not be used for policy.',
   'sheet': 'TS3'},
@@ -227,8 +227,9 @@ SUPP = [{'num': 'S1',
             'coding; left censoring of center start',
             'Discussion (Limitations)'],
            ['22.1 Accessibility of protocol, raw data and code',
-            'Raw data publicly available from DATASUS; extraction and analysis code at '
-            'https://github.com/Hadid55555/heart-transplant-network-brazil (record-level files are not shared)',
+            'Raw data publicly available from DATASUS (https://datasus.saude.gov.br); extraction and analysis code at '
+            'https://github.com/Hadid55555/heart-transplant-network-brazil, archived at Zenodo '
+            '(https://doi.org/10.5281/zenodo.24251606); record-level files are not shared',
             'Declarations (Data availability)']],
   'abbr': False},
  {'num': 'S15',

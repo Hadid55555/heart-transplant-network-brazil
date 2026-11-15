@@ -203,6 +203,7 @@ EXACT = {
  '—': '—',
 }
 PATTERNS = [
+ (r'^Sem (?:o )?Centro 02$', lambda m: 'Without the largest new centre'),
  (r'^Sem Centro (P?\d+)$', lambda m: f'Without Centre {m.group(1)}'),
  (r'^Faixa etária (\S+), n \(%\)$', lambda m: f'Age group {m.group(1).replace("-", "–").replace("60+", "≥60")} years, n (%)'),
  (r'^Região do hospital (.+), n \(%\)$', lambda m: f'Region of the hospital: {EXACT.get(m.group(1), m.group(1))}, n (%)'),
