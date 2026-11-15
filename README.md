@@ -1,5 +1,7 @@
 # Heart transplantation in Brazil's public health system, 2000–2025
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24251606.svg)](https://doi.org/10.5281/zenodo.24251606)
+
 Code for the article:
 
 > Hadid L, Salek L, Passos FS, Caldonazo T. Heart transplantation in Brazil's public health system, 2000–2025: a nationwide analysis of network growth, regional utilization and center volume.

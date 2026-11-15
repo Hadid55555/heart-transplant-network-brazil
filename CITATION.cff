@@ -3,6 +3,7 @@ message: "If you use this code, please cite the article."
 title: "Code and data for: Heart transplantation in Brazil's public health system, 2000-2025"
 type: software
 version: 1.0.0
+doi: 10.5281/zenodo.24251606
 license: MIT
 authors:
   - family-names: Hadid
